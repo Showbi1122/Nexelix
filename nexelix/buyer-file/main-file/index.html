@@ -516,7 +516,7 @@
                 </div>
                 <div class="pricing-table position-relative">
                     <div class="d-flex align-items-center gap-3">
-                        <span class="label pra fs-seven" id="monthly-label">Pay Monthly</span>
+                        <span class="label pra fs-seven" id="monthly-label" style="font-weight:bold;">Pay Monthly</span>
                         <div class="switch" id="pricing-switch" style="cursor:pointer;">
                             <div class="toggle"></div>
                         </div>
@@ -527,7 +527,8 @@
                 </div>
             </div>
             <div class="row g-4 justify-content-center" id="pricing-cards">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                <!-- Monthly Plans (visible by default) -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp pricing-card" data-wow-delay="0.4s" data-plan="monthly">
                     <div class="pricing-items">
                         <div class="heading">
                             <div class="text-center mb-lg-4 mb-4">
@@ -555,7 +556,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="col-lg-4 col-md-6 wow fadeInUp pricing-card" data-wow-delay="0.6s" data-plan="monthly">
                     <div class="pricing-items active">
                         <div class="heading">
                             <div class="text-center mb-lg-4 mb-4">
@@ -583,7 +584,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.8s">
+                <div class="col-lg-4 col-md-6 wow fadeInUp pricing-card" data-wow-delay="0.8s" data-plan="monthly">
                     <div class="pricing-items">
                         <div class="heading">
                             <div class="text-center mb-lg-4 mb-4">
@@ -611,8 +612,160 @@
                         </ul>
                     </div>
                 </div>
+                <!-- Annually Plans (hidden by default) -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp pricing-card" data-wow-delay="0.4s" data-plan="annually" style="display:none;">
+                    <div class="pricing-items">
+                        <div class="heading">
+                            <div class="text-center mb-lg-4 mb-4">
+                                <span class="d-inline-block border rounded-2 fw_500 py-2 px-4 fs-seven pra">
+                                    Silver
+                                </span>
+                            </div>
+                            <h2
+                                class="black d-flex justify-content-center mb-lg-4 mb-4 align-items-start fw-bold text-center">
+                                <span class="fs-two">$</span>1800
+                            </h2>
+                            <a href="pricing-plan.html"
+                                class="common-btn box-style cmn-style1 w-100 black d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 overflow-hidden bg-color rounded-3">
+                                Choose Package
+                            </a>
+                        </div>
+                        <ul class="price-list text-center d-grid gap-3">
+                            <li class="black fs-seven fw_500">24/7 hours support</li>
+                            <li class="line"></li>
+                            <li class="black fs-seven fw_500">Dedicated tech expert</li>
+                            <li class="line"></li>
+                            <li class="black fs-seven fw_500">30 Posts Per Month</li>
+                            <li class="line"></li>
+                            <li class="black fs-seven fw_500">Customer Satisfaction</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp pricing-card" data-wow-delay="0.6s" data-plan="annually" style="display:none;">
+                    <div class="pricing-items active">
+                        <div class="heading">
+                            <div class="text-center mb-lg-4 mb-4">
+                                <span class="d-inline-block border rounded-2 fw_500 py-2 px-4 fs-seven pra">
+                                    Golden
+                                </span>
+                            </div>
+                            <h2
+                                class="black d-flex justify-content-center mb-lg-4 mb-4 align-items-start fw-bold text-center">
+                                <span class="fs-two">$</span>2200
+                            </h2>
+                            <a href="pricing-plan.html"
+                                class="common-btn box-style cmn-style1 w-100 black d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 overflow-hidden bg-color rounded-3">
+                                Choose Package
+                            </a>
+                        </div>
+                        <ul class="price-list text-center d-grid gap-3">
+                            <li class="black fs-seven fw_500">24/7 hours support</li>
+                            <li class="line"></li>
+                            <li class="black fs-seven fw_500">Dedicated tech expert</li>
+                            <li class="line"></li>
+                            <li class="black fs-seven fw_500">60 Posts Per Month + 10 Videos</li>
+                            <li class="line"></li>
+                            <li class="black fs-seven fw_500">Customer Satisfaction</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp pricing-card" data-wow-delay="0.8s" data-plan="annually" style="display:none;">
+                    <div class="pricing-items">
+                        <div class="heading">
+                            <div class="text-center mb-lg-4 mb-4">
+                                <span class="d-inline-block border rounded-2 fw_500 py-2 px-4 fs-seven pra">
+                                    Premium
+                                </span>
+                            </div>
+                            <h2
+                                class="black d-flex justify-content-center mb-lg-4 mb-4 align-items-start fw-bold text-center">
+                                <span class="fs-two">$</span>2600
+                            </h2>
+                            <a href="pricing-plan.html"
+                                class="common-btn box-style cmn-style1 w-100 black d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 overflow-hidden bg-color rounded-3">
+                                Choose Package
+                            </a>
+                        </div>
+                        <ul class="price-list text-center d-grid gap-3">
+                            <li class="black fs-seven fw_500">24/7 hours support</li>
+                            <li class="line"></li>
+                            <li class="black fs-seven fw_500">Dedicated tech expert</li>
+                            <li class="line"></li>
+                            <li class="black fs-seven fw_500">90 Posts Per Month + Videos</li>
+                            <li class="line"></li>
+                            <li class="black fs-seven fw_500">Custmer Satisfaction and revisions</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
+        <script>
+        // Pricing Switch Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            var switchBtn = document.getElementById('pricing-switch');
+            var monthlyLabel = document.getElementById('monthly-label');
+            var annuallyLabel = document.getElementById('annually-label');
+            var cards = document.querySelectorAll('.pricing-card');
+            var isMonthly = true; // Default to Monthly
+
+            function setPlan(plan) {
+                cards.forEach(function(card) {
+                    if(card.getAttribute('data-plan') === plan) {
+                        card.style.display = '';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+                if(plan === 'monthly') {
+                    monthlyLabel.style.fontWeight = 'bold';
+                    annuallyLabel.style.fontWeight = 'normal';
+                    switchBtn.classList.remove('active');
+                } else {
+                    monthlyLabel.style.fontWeight = 'normal';
+                    annuallyLabel.style.fontWeight = 'bold';
+                    switchBtn.classList.add('active');
+                }
+            }
+
+            switchBtn.addEventListener('click', function() {
+                isMonthly = !isMonthly;
+                setPlan(isMonthly ? 'monthly' : 'annually');
+            });
+
+            // Initial state: show only monthly plans
+            setPlan('monthly');
+        });
+        </script>
+        <style>
+        /* Simple switch animation */
+        #pricing-switch {
+            width: 48px;
+            height: 24px;
+            background: #e0e0e0;
+            border-radius: 12px;
+            position: relative;
+            transition: background 0.3s;
+            display: flex;
+            align-items: center;
+        }
+        #pricing-switch .toggle {
+            width: 20px;
+            height: 20px;
+            background: #FFD600;
+            border-radius: 50%;
+            position: absolute;
+            left: 26px;
+            top: 2px;
+            transition: left 0.3s;
+        }
+        #pricing-switch.active {
+            background: #FFD600;
+        }
+        #pricing-switch.active .toggle {
+            left: 2px;
+            background: #222;
+        }
+        </style>
     </section>
 
     <!-- Challenge Section Start -->
@@ -820,43 +973,6 @@
             </div>
         </div>
     </footer>
-
-    <!--<< Footer Section Start >>-->
-<!-- <footer class="footer-section style blackbg fix">
-    <div class="container">
-        <div class="footer-widgets-wrapper">
-            <div class="row g-lg-4 g-4 justify-content-between align-items-center">
-                <div class="col-lg-4 col-md-6 col-sm-12 text-center text-lg-start">
-                    <a href="index.html" class="footer-logo d-inline-block mb-3">
-                        <img src="assets/img/logo/logo-white.png" alt="img">
-                    </a>
-                    <div class="list-info">
-                        <div class="list-info-item">
-                            <span class="fs-eight white65 d-block">Call Us</span>
-                            <a href="tel:+923118271213" class="white fw-semibold">+92-3118271213</a>
-                        </div>
-                        <div class="list-info-item mt-2">
-                            <span class="fs-eight white65 d-block">Email</span>
-                            <a href="mailto:rbasit782@gmail.com" class="white fw-semibold">rbasit782@gmail.com</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 col-sm-12 text-center text-lg-end mt-4 mt-lg-0">
-                    <div class="social-custom d-flex justify-content-center justify-content-lg-end align-items-center gap-xl-3 gap-3 mb-3">
-                        <a href="https://www.facebook.com/profile.php?id=61577991272333" class="black"><i class="fab fa-facebook-f white65 fs-six"></i></a>
-                        <a href="https://www.linkedin.com/company/nexelix-co/" class="black"><i class="fa-brands fa-linkedin-in white65 fs-six"></i></a>
-                        <a href="https://www.instagram.com/nexelix.co/" class="black"><i class="fa-brands fa-instagram white65 fs-six"></i></a>
-                    </div>
-                    <p class="white65 mb-0">
-                        &copy;2025 <a href="index.html" class="white fw_500">Nexelix</a> All rights reserved.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer> -->
-
 
     <!-- Search Area Start -->
     <div class="search-wrap">
