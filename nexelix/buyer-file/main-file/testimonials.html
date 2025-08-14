@@ -31,6 +31,17 @@
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <!--<< Main.css >>-->
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        .swiper {
+    padding: 20px 0;
+}
+.swiper-button-prev,
+.swiper-button-next {
+    color: transparent; /* Change to your theme color */
+}
+
+    </style>
 </head>
 
 <body>
@@ -296,11 +307,77 @@
     </section>
     <!-- Banner Section Start -->
 
-    <!-- Testimonial Section end -->
-    <section class="testimonial-section section-padding fix">
-        <div class="container">
-            <div class="row g-4 justify-content-center">
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".3s">
+<!-- Testimonial Section Start -->
+<section class="testimonial-section section-padding fix">
+    <div class="container">
+
+        <!-- Desktop Grid View -->
+        <div class="row g-4 justify-content-center d-none d-md-flex">
+            <!-- Testimonial 1 -->
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".3s">
+                <div class="testimonial-items05">
+                    <div class="boxes">
+                        <div class="d-flex align-items-center gap-2 mb-4">
+                            <i class="fa-solid fa-star fs-six p2-clr"></i>
+                            <i class="fa-solid fa-star fs-six p2-clr"></i>
+                            <i class="fa-solid fa-star fs-six p2-clr"></i>
+                            <i class="fa-solid fa-star fs-six p2-clr"></i>
+                            <i class="fa-solid fa-star fs-six p2-clr"></i>
+                        </div>
+                        <p class="pra">
+                            We've been working with Evolve for over a year now and we're happy with the results.
+                        </p>
+                        <div class="d-flex align-items-center gap-xxl-4 gap-xl-3 gap-3">
+                            <div class="author rounded-circle">
+                                <img src="assets/img/testimonial/customer1.png" alt="img" class="rounded-circle">
+                            </div>
+                            <div class="cont">
+                                <p class="fs-eight mb-1 p1-clr d-block">Co founder</p>
+                                <h6 class="black fw-six">Raw Material</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="assets/img/testimonial/testimonial-mask.png" alt="img" class="testimonial-mask">
+                </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".5s">
+                <div class="testimonial-items05">
+                    <div class="boxes">
+                        <div class="d-flex align-items-center gap-2 mb-4">
+                            <i class="fa-solid fa-star fs-six p2-clr"></i>
+                            <i class="fa-solid fa-star fs-six p2-clr"></i>
+                            <i class="fa-solid fa-star fs-six p2-clr"></i>
+                            <i class="fa-solid fa-star fs-six p2-clr"></i>
+                            <i class="fa-solid fa-star fs-six p2-clr"></i>
+                        </div>
+                        <p class="pra">
+                            We've been working with Evolve for over a year now and we're happy with the results.
+                        </p>
+                        <div class="d-flex align-items-center gap-xxl-4 gap-xl-3 gap-3">
+                            <div class="author rounded-circle">
+                                <img src="assets/img/testimonial/goyela.png" alt="img" class="rounded-circle">
+                            </div>
+                            <div class="cont">
+                                <p class="fs-eight mb-1 p1-clr d-block">Designer</p>
+                                <h6 class="black fw-six">Nick Jonas</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="assets/img/testimonial/testimonial-mask.png" alt="img" class="testimonial-mask">
+                </div>
+            </div>
+
+            <!-- Add rest of your testimonials here with same structure -->
+        </div>
+
+        <!-- Mobile Slider -->
+        <div class="swiper testimonial-slider d-md-none" style="width: 370px;">
+            <div class="swiper-wrapper">
+
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
                     <div class="testimonial-items05">
                         <div class="boxes">
                             <div class="d-flex align-items-center gap-2 mb-4">
@@ -311,9 +388,7 @@
                                 <i class="fa-solid fa-star fs-six p2-clr"></i>
                             </div>
                             <p class="pra">
-                                We've been working with Evolve for
-                                over a year now and we're happy
-                                with the results.
+                                We've been working with Evolve for over a year now and we're happy with the results.
                             </p>
                             <div class="d-flex align-items-center gap-xxl-4 gap-xl-3 gap-3">
                                 <div class="author rounded-circle">
@@ -325,11 +400,12 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Ele -->
                         <img src="assets/img/testimonial/testimonial-mask.png" alt="img" class="testimonial-mask">
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".5s">
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
                     <div class="testimonial-items05">
                         <div class="boxes">
                             <div class="d-flex align-items-center gap-2 mb-4">
@@ -340,9 +416,7 @@
                                 <i class="fa-solid fa-star fs-six p2-clr"></i>
                             </div>
                             <p class="pra">
-                                We've been working with Evolve for
-                                over a year now and we're happy
-                                with the results.
+                                We've been working with Evolve for over a year now and we're happy with the results.
                             </p>
                             <div class="d-flex align-items-center gap-xxl-4 gap-xl-3 gap-3">
                                 <div class="author rounded-circle">
@@ -354,132 +428,24 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Ele -->
                         <img src="assets/img/testimonial/testimonial-mask.png" alt="img" class="testimonial-mask">
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".7s">
-                    <div class="testimonial-items05">
-                        <div class="boxes">
-                            <div class="d-flex align-items-center gap-2 mb-4">
-                                <i class="fa-solid fa-star fs-six p2-clr"></i>
-                                <i class="fa-solid fa-star fs-six p2-clr"></i>
-                                <i class="fa-solid fa-star fs-six p2-clr"></i>
-                                <i class="fa-solid fa-star fs-six p2-clr"></i>
-                                <i class="fa-solid fa-star fs-six p2-clr"></i>
-                            </div>
-                            <p class="pra">
-                                We've been working with Evolve for
-                                over a year now and we're happy
-                                with the results.
-                            </p>
-                            <div class="d-flex align-items-center gap-xxl-4 gap-xl-3 gap-3">
-                                <div class="author rounded-circle">
-                                    <img src="assets/img/testimonial/author7.png" alt="img" class="rounded-circle">
-                                </div>
-                                <div class="cont">
-                                    <p class="fs-eight mb-1 p1-clr d-block">Co founder</p>
-                                    <h6 class="black fw-six">Jibon Pilsberg</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Ele -->
-                        <img src="assets/img/testimonial/testimonial-mask.png" alt="img" class="testimonial-mask">
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".9s">
-                    <div class="testimonial-items05">
-                        <div class="boxes">
-                            <div class="d-flex align-items-center gap-2 mb-4">
-                                <i class="fa-solid fa-star fs-six p2-clr"></i>
-                                <i class="fa-solid fa-star fs-six p2-clr"></i>
-                                <i class="fa-solid fa-star fs-six p2-clr"></i>
-                                <i class="fa-solid fa-star fs-six p2-clr"></i>
-                                <i class="fa-solid fa-star fs-six p2-clr"></i>
-                            </div>
-                            <p class="pra">
-                                We've been working with Evolve for
-                                over a year now and we're happy
-                                with the results.
-                            </p>
-                            <div class="d-flex align-items-center gap-xxl-4 gap-xl-3 gap-3">
-                                <div class="author rounded-circle">
-                                    <img src="assets/img/testimonial/testimonial-m3.png" alt="img"
-                                        class="rounded-circle">
-                                </div>
-                                <div class="cont">
-                                    <p class="fs-eight mb-1 p1-clr d-block">Designer</p>
-                                    <h6 class="black fw-six">Richard Noverl</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Ele -->
-                        <img src="assets/img/testimonial/testimonial-mask.png" alt="img" class="testimonial-mask">
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".3s">
-                    <div class="testimonial-items05">
-                        <div class="boxes">
-                            <div class="d-flex align-items-center gap-2 mb-4">
-                                <i class="fa-solid fa-star fs-six p2-clr"></i>
-                                <i class="fa-solid fa-star fs-six p2-clr"></i>
-                                <i class="fa-solid fa-star fs-six p2-clr"></i>
-                                <i class="fa-solid fa-star fs-six p2-clr"></i>
-                                <i class="fa-solid fa-star fs-six p2-clr"></i>
-                            </div>
-                            <p class="pra">
-                                We've been working with Evolve for
-                                over a year now and we're happy
-                                with the results.
-                            </p>
-                            <div class="d-flex align-items-center gap-xxl-4 gap-xl-3 gap-3">
-                                <div class="author rounded-circle">
-                                    <img src="assets/img/testimonial/testimonial-m2.png" alt="img"
-                                        class="rounded-circle">
-                                </div>
-                                <div class="cont">
-                                    <p class="fs-eight mb-1 p1-clr d-block">CEO</p>
-                                    <h6 class="black fw-six">Harish Bhimol</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Ele -->
-                        <img src="assets/img/testimonial/testimonial-mask.png" alt="img" class="testimonial-mask">
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".5s">
-                    <div class="testimonial-items05">
-                        <div class="boxes">
-                            <div class="d-flex align-items-center gap-2 mb-4">
-                                <i class="fa-solid fa-star fs-six p2-clr"></i>
-                                <i class="fa-solid fa-star fs-six p2-clr"></i>
-                                <i class="fa-solid fa-star fs-six p2-clr"></i>
-                                <i class="fa-solid fa-star fs-six p2-clr"></i>
-                                <i class="fa-solid fa-star fs-six p2-clr"></i>
-                            </div>
-                            <p class="pra">
-                                We've been working with Evolve for
-                                over a year now and we're happy
-                                with the results.
-                            </p>
-                            <div class="d-flex align-items-center gap-xxl-4 gap-xl-3 gap-3">
-                                <div class="author rounded-circle">
-                                    <img src="assets/img/testimonial/testimonial-m1.png" alt="img"
-                                        class="rounded-circle">
-                                </div>
-                                <div class="cont">
-                                    <p class="fs-eight mb-1 p1-clr d-block">Manager</p>
-                                    <h6 class="black fw-six">Robert Pitterson</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Ele -->
-                        <img src="assets/img/testimonial/testimonial-mask.png" alt="img" class="testimonial-mask">
-                    </div>
-                </div>
+
+                <!-- Add rest of testimonials here in swiper-slide format -->
+
             </div>
+
+                <!-- Prev/Next Buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
         </div>
-    </section>
+
+    </div>
+</section>
+
+
+
 
     <!--<< Customer Touch Section Start >>-->
     <section class="customer-touch fix">
@@ -677,6 +643,25 @@
     <script src="assets/js/vanilla-tilt.min.js"></script>
     <!--<< Main.js >>-->
     <script src="assets/js/main.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper', {
+            loop: true,
+            spaceBetween: 20,
+            slidesPerView: 1,
+            speed: 800, // smooth transition speed in ms
+            autoplay: {
+                delay: 3000, // time between slides in ms (3 seconds)
+                disableOnInteraction: false, // keeps autoplay after manual swipe
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+        </script>
+        
 </body>
 
 </html>
