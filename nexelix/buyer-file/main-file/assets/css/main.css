@@ -6827,29 +6827,29 @@ input.main-search-input::placeholder {
 
 .service-development-item {
   padding: 94px 16px;
-  background: url(../../assets/img/services/se-img1.png) no-repeat center center;
+  background: url(../../assets/img/services/web-development.png) no-repeat center center;
   background-size: cover;
   height: 340px;
   position: relative;
 }
 .service-development-item.bg-img2 {
-  background: url(../../assets/img/services/se-img2.png) no-repeat center center;
+  background: url(../../assets/img/services/wordpress-development.png) no-repeat center center;
   background-size: cover;
 }
 .service-development-item.bg-img3 {
-  background: url(../../assets/img/services/se-img3.png) no-repeat center center;
+  background: url(../../assets/img/services/shopify-stores.png) no-repeat center center;
   background-size: cover;
 }
 .service-development-item.bg-img4 {
-  background: url(../../assets/img/services/se-img4.png) no-repeat center center;
+  background: url(../../assets/img/services/graphic-designing.png) no-repeat center center;
   background-size: cover;
 }
 .service-development-item.bg-img5 {
-  background: url(../../assets/img/services/se-img5.png) no-repeat center center;
+  background: url(../../assets/img/services/point-of-sales.png) no-repeat center center;
   background-size: cover;
 }
 .service-development-item.bg-img6 {
-  background: url(../../assets/img/services/se-img6.png) no-repeat center center;
+  background: url(../../assets/img/services/architectural-designing.png) no-repeat center center;
   background-size: cover;
 }
 .service-development-item .right-arrow {
