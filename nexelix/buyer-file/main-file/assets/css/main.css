@@ -5332,12 +5332,13 @@ footer {
   top: 0;
   width: 100%;
   z-index: 9999999;
+  background-color: white;
 }
 .preloader .animation-preloader {
   z-index: 1000;
 }
 .preloader .animation-preloader .spinner {
-  animation: spinner 1s infinite linear;
+  animation: spinner 1ms infinite linear;
   border-radius: 50%;
   border: 3px solid #ddd;
   border-top-color: var(--p1-clr);
